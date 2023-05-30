@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+      <div class="container">
+            <form>
+                <div class="inputs_container">
+                <div>
+                <label id="label" for="input">DAY</label>
+                <input type="text" name="day" id="d1" minlength="2"
+                 maxlength="2" placeholder="DD" required >
+                 <span id="RequiredField"></span>
+              </div>
+              <div>
+                <label  id="label" for="input">MONTH</label>
+                <input type="text" name="month" id="m1"  minlength="2" 
+                maxlength="2" placeholder="MM" required >
+                <span></span>
+                </div>
+
+                <div>
+                <label  id="label" for="input"> YEAR </label>
+                <input type="text" name="year" id="y1" 
+                 minlength="4" maxlengh="4" placeholder="YYYY" required >
+               </div>
+               <span></span>
+               </div>
+                 
+               <div class="button_container">
+              <hr/>
+                <button type="button"  onclick="age()">
+               <div><span></span>
+                <span></span>
+                
+                <span></span> 
+            </div> </button>
+
+                </div>
+                
+                <div class="root" id="root">
+   <span>
+    <i>
+   <span id="yearVar" class="root_hyphen">--</span>
+  <span id="yearString">years</span>
+</i>
+</span>
+   <span>
+    <i>
+        <span  id="monthVar" class="root_hyphen">--</span>
+         <span id="monthString">months</span>
+        </i> 
+    </span>
+    <span>
+    <i>
+        <span id="dayVar" class="root_hyphen">--</span>
+        <span id="dayString">days</span>
+    </i> 
+</span>
+                </div>
+              
+            </form>
+            </div>
+        <script src="main.js"></script>
+</body>
+</html>
