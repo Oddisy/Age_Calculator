@@ -11,7 +11,112 @@
     <title>Document</title>
 </head>
 <body>
-      <div class="container">
+         <main class="container">
+            <form method="get" onsubmit="return ">
+                <div class="inputs_container">
+                <div>
+                <label id="day_label_color" class="day_label_style" for="day">DAY</label>
+                <input id="input_day" type="text" name="day" minlength="2"
+                 maxlength="2" placeholder="DD"  required >
+                <i> <span class="day_error input_error" id="requiredDayField"></span></i>
+              </div>
+              <div>
+                <label id="month_label_color"  class="month_style" for="month">MONTH</label>
+                <input type="text" name="month" id="input_month" 
+                 minlength="2" 
+                maxlength="2" placeholder="MM" required >
+                <i><span class="month_error input_error"  id="requiredMonthField"></span></i>
+                </div>
+
+                <div>
+                <label id="year_label_color"  class="year_style"  for="year"> YEAR </label>
+                <input type="text" name="year" class="input_year"
+                  maxlengh="4" placeholder="YYYY" required >
+               <i><span class="year_error input_error"  id="requiredYearField"></span></i>
+               </div>
+               </div>
+               <div class="button_container">
+              <hr/>
+                <button class="btn_submit" type="button"  onclick="age()">
+               <div><span></span>
+                <span></span>
+                
+                <span></span> 
+            </div> </button>
+
+                </div>
+                
+                <div class="Output_Container" id="root">
+    <h1>
+    <i>
+   <span id="output_year" class="number_output_style">--</span>
+  <span class="year_Output" id="yearString">years</span>
+    </i>
+</h1>
+   <h1>
+    <i>
+         <span id="output_Month"  class="number_output_style" >--</span>
+         <span id="monthString">months</span>
+        </i>
+
+    </h1>
+    <h1>
+    <i>
+        <span id="output_Day" class="number_output_style">--</span>
+        <span id="dayString">days</span>
+    </i> 
+</h1>
+                </div>
+              
+            </form>
+        </main>
+        <script src="main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="container">
             <form>
                 <div class="inputs_container">
                 <div>
@@ -69,6 +174,6 @@
               
             </form>
             </div>
-        <script src="main.js"></script>
+        <script src="main.js"></script> -->
 </body>
 </html>
