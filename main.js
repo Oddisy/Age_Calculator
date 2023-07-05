@@ -1,3 +1,13 @@
+
+const Rep = document.querySelector("#Rep");
+       
+     
+let myWidth = window.innerWidth
+Rep.innerHTML = myWidth;
+        
+
+      
+
 // Others
 
 const date = new Date();
@@ -175,6 +185,16 @@ function age() {
       }
       else {
         yearOutput.textContent = currentYear - yearInput.value - 1;
-      }
+  }
+  allInput.addEventListener('click', (e) => { 
+    if ((+yearInput.value == "") || (+monthInput.value == "") ||
+      (+dayInput.value == "")) {
+       yearLabel.style.color = "red"
+    yearInput.style.border = "1px solid red"
+    isValid = false;
+    button.disabled = true;
+  }
+  })
+  
   }
 
