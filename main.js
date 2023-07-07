@@ -12,6 +12,8 @@ Rep.innerHTML = myWidth;
 
 const date = new Date();
 let allInput = document.querySelectorAll("input");
+
+
 // Day declarations
 const dayInput = document.querySelector("#input_day");
 const currentDay = date.getDate();
@@ -143,58 +145,70 @@ yearInput.addEventListener("input", (e) => {
 function age() {
     
   const month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-
-  if ((+yearInput.value == "") || (+monthInput.value == "") ||
-    (+dayInput.value == "")) {
-    button.disabled = true;
+  allInput.forEach(input = () => {
+      if ((+yearInput.value == "") || (+monthInput.value == "") ||
+      (+dayInput.value == "")) {
+         yearInput.style.border = "1px solid red"
+        yearLabel.style.color = "red"
+        yearError.textContent = "This field is required";
+         monthInput.style.border = "1px solid red"
+        monthLabel.style.color = "red"
+        monthError.textContent = "This field is required";
+         dayInput.style.border = "1px solid red"
+         dayLabel.style.color = "red"
+         dayError.textContent = "This field is required";
+         button.disabled = true;
+    }
   }
+  )
+
+
+  // for (i = 0; i <= allInput.length; i++) {
+  //   if ((+yearInput.value == "") || (+monthInput.value == "") ||
+  //     (+dayInput.value == "")) {
+  //     yearInput.style.border = "1px solid red"
+  //     yearLabel.style.color = "red"
+  //     button.disabled = true;
+  //   }
+  // }
   if (((+dayInput.value > 31) || (+dayInput.value < 0) || (dayInput.value != +dayInput.value))
     || ((+monthInput.value > 12) || (+monthInput.value < 0) || (monthInput.value != +monthInput.value))
-    || ((+yearInput.value > currentYear) || (+yearInput.value <  0) || (yearInput.value != +yearInput.value))) {
+    || ((+yearInput.value > currentYear) || (+yearInput.value < 0) || (yearInput.value != +yearInput.value))) {
     button.disabled = true;
   }
   if (+dayOutPut.value > 1) {
-     dayString.textContent = "goat"
+    dayString.textContent = "goat"
   }
 
-      if ((+yearInput.value % 4 == 0) || (+yearInput.value % 400 == 0)) {
-        month.splice(1, 1, 29)
-      } if (+dayInput.value > +currentDay) {
-        dayOutPut.textContent = month[currentMonth - 1] - +dayInput.value + currentDay;
-        monthOutput.textContent = currentMonth - 1;
+  if ((+yearInput.value % 4 == 0) || (+yearInput.value % 400 == 0)) {
+    month.splice(1, 1, 29)
+  } if (+dayInput.value > +currentDay) {
+    dayOutPut.textContent = month[currentMonth - 1] - +dayInput.value + currentDay;
+    monthOutput.textContent = currentMonth - 1;
 
-      } else if (+dayInput.value == +currentDay) {
-        dayOutPut.textContent = +"0";
-      } else {
-        dayOutPut.textContent = currentDay - dayInput.value;
-        monthOutput.textContent = currentMonth; 
+  } else if (+dayInput.value == +currentDay) {
+    dayOutPut.textContent = +"0";
+  } else {
+    dayOutPut.textContent = currentDay - dayInput.value;
+    monthOutput.textContent = currentMonth;
 
   } if (+monthInput.value > currentMonth) {
-        monthOutput.textContent = currentMonth + (12 - +monthInput.value);
-        yearOutput.value = currentYear - (+yearInput.value - 1);
+    monthOutput.textContent = currentMonth + (12 - +monthInput.value);
+    yearOutput.value = currentYear - (+yearInput.value - 1);
   
-      } else {
-        monthOutput.textContent = currentMonth - monthInput.value;
-      }
-      if (+yearInput.value > currentYear) {
-        isValid = false;
-        button.disabled = true;
-      } else if (+yearInput.value == currentYear) {
-     yearOutput.textContent = currentYear - yearInput.value 
-      }
-      else {
-        yearOutput.textContent = currentYear - yearInput.value - 1;
+  } else {
+    monthOutput.textContent = currentMonth - monthInput.value;
   }
-  allInput.addEventListener('click', (e) => { 
-    if ((+yearInput.value == "") || (+monthInput.value == "") ||
-      (+dayInput.value == "")) {
-       yearLabel.style.color = "red"
-    yearInput.style.border = "1px solid red"
+  if (+yearInput.value > currentYear) {
     isValid = false;
     button.disabled = true;
+  } else if (+yearInput.value == currentYear) {
+    yearOutput.textContent = currentYear - yearInput.value
   }
-  })
+  else {
+    yearOutput.textContent = currentYear - yearInput.value - 1;
+  }
+  }
   
-  }
+
 
