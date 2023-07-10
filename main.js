@@ -1,9 +1,10 @@
 
-const Rep = document.querySelector("#Rep");
+
+// Code to determine the width for responsiveness 
+// const Rep = document.querySelector("#Rep");
        
-     
-let myWidth = window.innerWidth
-Rep.innerHTML = myWidth;
+// let myWidth = window.innerWidth
+// Rep.innerHTML = myWidth;
         
 
       
@@ -12,8 +13,8 @@ Rep.innerHTML = myWidth;
 
 const date = new Date();
 let allInput = document.querySelectorAll("input");
-
-
+let allOutputStrings = document.querySelectorAll(".outputStrings");
+console.log(allOutputStrings[0])
 // Day declarations
 const dayInput = document.querySelector("#input_day");
 const currentDay = date.getDate();
@@ -161,8 +162,7 @@ function age() {
     }
   }
   )
-
-
+  // Alternate solution to the above code
   // for (i = 0; i <= allInput.length; i++) {
   //   if ((+yearInput.value == "") || (+monthInput.value == "") ||
   //     (+dayInput.value == "")) {

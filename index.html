@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Age calculator</title>
 </head>
 <body>
          <main class="container">
@@ -39,7 +39,8 @@
                <div class="button_container">
               <hr/>
                 <button class="btn_submit" type="button"  onclick="age()">
-            <img src="images/icon-arrow.svg" alt="Enter button"></button>
+            <img class="button_logo" height="60px" width="60px" src="images/icon-arrow.svg" 
+            alt="Enter button"></button>
 
                 </div>
                 
@@ -47,20 +48,20 @@
     <h1>
     <i>
    <span id="output_year" class="number_output_style">-&nbsp;-</span>
-  <span class="year_Output" id="yearString">years</span>
+  <span class="outputStrings" id="yearString">years</span>
     </i>
 </h1>
    <h1>
     <i>
          <span id="output_Month"  class="number_output_style" >-&nbsp;-</span>
-         <span id="monthString">months</span>
+         <span class="outputStrings" id="monthString">months</span>
         </i>
 
     </h1>
     <h1>
     <i>
         <span id="output_Day" class="number_output_style">-&nbsp;-</span>
-        <span id="dayString">days</span>
+        <span class="outputStrings" id="dayString">days</span>
     </i> 
 </h1>
                 </div>
@@ -173,4 +174,4 @@
             </div>
         <script src="main.js"></script> -->
 </body>
-</html>
+</html> 

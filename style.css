@@ -9,18 +9,17 @@
 body{
       background-color:hsl(0, 63%, 7%);
     max-width: 100vw;
-    /* display:flex;
-    justify-content: center;
-    align-items:center; */
     height:100vh;
     font-family: 'Poppins', sans-serif;
+    margin: 0px auto 0px;
+    font-family: poppins, sans-serif;
 }
 
 .container{
      margin:0px auto;
     background-color:hsl(0, 0%, 100%);
-    height:67%;
-    max-width:42%;
+    height:70%;
+    max-width:47%;
     border-radius:15px 15px 150px;
     padding:2rem;
     display:grid;
@@ -30,7 +29,8 @@ body{
 }
 form > .inputs_container{
     display:flex;
-    margin-top:-50px;
+    margin-top:-90px;
+    height: 6.8rem;
     width:85%;
     justify-content: space-between;
 }
@@ -38,19 +38,15 @@ form > .inputs_container{
 .inputs_container > div{
     margin:15px 15px 0px;
     height:4.7rem;
-    /* width:30%; */
 }
 
 input[type=text]{
     font-weight: 800;
-    font-size:1.2rem;
-    border-radius:5px;
-    /* width:130px; */
-    /* padding:20px;  */
-    padding:.5rem;
-    width:80%;
-    /* height:60px; */
-    height:3.2rem;
+    font-size:1.5rem;
+    border-radius:7px;
+    padding:.5rem 1rem .5rem;
+    width:85%;
+    height:3.5rem;
     outline: none;
     border:0.001px solid hsl(0, 3%, 77%);
 }
@@ -64,9 +60,14 @@ border:0.5px solid rgb(15, 14, 14);
 }
 
 button{
+    float:right;
     color:white;
     border-radius:50%;
-    background-color:hsl(259, 100%, 65%);
+    background-color:hsl(259, 100%, 65%) ;
+    
+}
+button:active{
+background-color:hsl(240, 8%, 5%);
 }
 
 
@@ -76,6 +77,7 @@ display:block;
 color:hsl(0, 6%, 40%);
 font-size:.7rem;
 margin-bottom:5px;
+font-weight: 700;
 }
 
 
@@ -101,8 +103,6 @@ font-weight:900;
 }
 .number_output_style{
     color:hsl(259, 100%, 65%) ;
-    /* margin-right: -.6rem; */
-    /* margin-left:-2.5rem; */
 }
 .Output_Day + span{
     padding:0px;
@@ -112,6 +112,7 @@ font-weight:900;
 
 .input_error{
 color:red;
+font-weight: 100;
 
 }
 
@@ -119,7 +120,7 @@ color:red;
 display:flex;
 flex-direction: column;
 margin-top: 5px;
-font-size: .75rem;
+font-size: .7rem;
 
 }
 
@@ -127,8 +128,17 @@ font-size: .75rem;
 @media screen and (max-width:1336px){
  
 .Output_Container{
- font-size:2.3rem;
+ font-size:2.2rem;
+ line-height: 70px;
+ 
 }
+    form > .inputs_container{
+    margin-top: -180px;
+}
+.container {
+    height:68%;
+}
+
 input[type=text]{
     font-weight: 800;
     font-size:1rem;
@@ -136,241 +146,81 @@ input[type=text]{
 }
 @media screen and (max-width:1140px){
  .Output_Container{
- font-size:2rem;
+ font-size:1.9rem;
+  line-height: 60px;
+}
+    form > .inputs_container{
+    margin-top: -200px;
+}
+.container {
+    height:66%;
 }
 input[type=text]{
     font-weight: 800;
     font-size:.8rem;
 }
+}
 @media screen and (max-width:1020px){
  .Output_Container{
- font-size:1.7rem;
+ font-size:1.6rem;
+ line-height: 50px;
+}
+    form > .inputs_container{
+    margin-top: -220px;
+}
+.container {
+    height:60%;
 }
 input[type=text]{
     font-weight: 800;
      width:100%;
-    font-size:.7rem;
+    font-size:.6rem;
+}
 }
 @media screen and (max-width:890px){
  .Output_Container{
- font-size:1.5rem;
+ font-size:1.4rem;
+  line-height: 45px;
 }
+    form > .inputs_container{
+    margin-top: -230px;
+}
+.container {
+    height:58%;
+}
+
+
 input[type=text]{
     font-weight: 800;
     font-size:.6rem;
-}
+}}
 @media screen and (max-width:846px){
     body{
         width:100% ;
     }
+    button{
+        position:relative;
+        left:-50%;
+    }
+    form > .inputs_container{
+    height: 8rem;
+    margin-top: -50px;
+}
     .container{
 width: 80%;
+height:60%;
     }
+    
+    
  .Output_Container{
- font-size:1.5rem;
+ font-size:1.2rem;
+  line-height: 40px;
+    padding-top: 50px;
 }
 input[type=text]{
     font-weight: 800;
 }
 .container{
-    
     min-width:356px;
-
 }
 }
-
-     /* @media screen and (max-width:600px) {
-          body{
-        width:80%; 
-    }
-.Output_Container{
- font-size:1rem;
-} */
-
-     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-*{
-    margin:0px;
-    padding:0px;
-    box-sizing:border-box;
-}
-
-body{
-    background-color:hsl(0, 0%, 86%);
-    width:100%;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    height:100vh;
-    font-family: 'Poppins', sans-serif;
-}
-
-.container{
-    background-color:hsl(0, 0%, 100%);
-    height:65%;
-    width:42%;
-border-radius:20px 20px 150px;
-padding:30px;
-}
-
-input[type=text]{
-    font-weight: 800;
-    font-size:1.5rem;
-    border-radius:5px;
-    width:130px;
-    padding:20px;
-    height:60px;
-    outline: none;
-    border:0.1px solid hsl(0, 10%, 80%);
-}
-
-input[type=text]:focus{
-border:0.5px solid black;
-}
-
-button{
-    color:white;
-    border-radius:50%;
-    background-color:hsl(259, 100%, 65%);
-    width:70px;
-    height:70px;
-   border:0px ;
-   float:right;
-    
-}
-button > div{
-    position:absolute;
-    top:275px;
-    right:482px;
-   background-color:hsl(259, 100%, 65%);
-    width:40px;
-    height:30px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-button  span:first-of-type{
- height:13px;
-   border-right: 2px solid white;
-border-top: 2px solid white;
-    width:16px;
-    border-top-right-radius: 100%;
-    margin-right:-40.5px;
-}
-button  span:nth-child(2){
-   height:30px;
-   width:40px;
-   border-right: 2px solid white;
-   margin-bottom: 10px;
-   margin-left: 1px;
-   
-}
-button  span:last-of-type{
-    height:16px;
-   border-left: 2px solid white;
-border-top: 2px solid white;
-    width:16px;
-    border-top-left-radius: 100%;
-    margin-left:-1px;
-}
-
-#root{
-        margin:0px 50px ;
-}
-
-label{
-    letter-spacing:1.5px;
-display:block;
-color:hsl(0, 1%, 44%);
-font-size:.7rem;
-margin-bottom:5px;
-}
-
-form > .inputs_container{
-    display:flex;
-
-}
-
-.inputs_container > div{
-    margin:15px 15px 0px;
-}
-
-.button_container{
-    float:right;
-    
-}
-hr{
-    float: left;
-    width:31rem;
-    position:relative;
-    top:40px;
-    margin-bottom:60px;
-    
-}
-.root{
-line-height: 85px;
-     font-weight:900;
- font-size:75px;
- display: flex;
- flex-direction: column;
-}
-.root_hyphen{
-    color:hsl(259, 100%, 65%) ;
-    margin-right: 20px;
-    margin-left:-40px;
-}
-.root_hyphen + span{
-    padding:0px;
-    margin:0px 0px 0px -40px ;
-}
-br{
-    margin-bottom: 0px;
-} */
-
-
