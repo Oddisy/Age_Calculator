@@ -27,7 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Age-Calculator%20Image.png)
+![](./images/Age-Calculator-error.png)
+![](./images/Age-Calculator-mobile-responsive.png)
+![](.//images/Age-Calculator-Mobile-Error.png
 
 
 ### Links
