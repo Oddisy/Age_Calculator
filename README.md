@@ -1,4 +1,4 @@
-# Frontend Mentor - News homepage solution
+# Frontend Mentor - Age Calculator Solution
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -40,6 +40,8 @@ Users should be able to:
 - Vanilla CSS 
 - Flexbox
 - Javascript
+
+
 
 ### What I learned
 I learn more about JavaScript (event listener, array, DOM manipulation, loops) while working on this project.
