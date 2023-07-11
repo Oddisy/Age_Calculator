@@ -30,7 +30,7 @@ Users should be able to:
 ![](./images/Age-Calculator%20Image.png)
 ![](./images/Age-Calculator-error.png)
 ![](./images/Age-Calculator-mobile-responsive.png)
-![](.//images/Age-Calculator-Mobile-Error.png
+![](.//images/Age-Calculator-Mobile-Error.png)
 
 
 ### Links
