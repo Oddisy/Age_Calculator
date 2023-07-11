@@ -7,7 +7,7 @@
 }
 
 body{
-      background-color:hsl(0, 63%, 7%);
+    background-color: hsl(0, 0%, 94%);
     max-width: 100vw;
     height:100vh;
     font-family: 'Poppins', sans-serif;
@@ -64,6 +64,7 @@ button{
     color:white;
     border-radius:50%;
     background-color:hsl(259, 100%, 65%) ;
+    border: none;
     
 }
 button:active{
@@ -88,7 +89,7 @@ width: 100%;
 }
 hr{
     float: left;
-    width:90%;
+    width:95%;
     position:relative;
     top:30px;
      color: hsl(0, 100%, 99%);
@@ -200,7 +201,7 @@ input[type=text]{
     }
     button{
         position:relative;
-        left:-50%;
+        left:-45%;
     }
     form > .inputs_container{
     height: 8rem;
