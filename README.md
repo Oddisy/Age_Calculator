@@ -1,2 +1,2 @@
 # Age_Calculator
-A website for calculating age
+An app for calculating age
